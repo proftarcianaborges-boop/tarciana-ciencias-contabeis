@@ -2,43 +2,66 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Artigos - Portal Tarciana</title>
+<title>Artigos e Publicações - Portal Tarciana</title>
 
 <style>
 body{
-    font-family:Arial, sans-serif;
     margin:0;
+    font-family:Arial, sans-serif;
     background:#f5f7fa;
+    color:#1f2937;
 }
 
-.topo{
+.header{
     background:#0D3B66;
     color:white;
-    padding:40px;
+    padding:50px 30px;
     text-align:center;
 }
 
+.header h1{
+    font-size:42px;
+    margin:0 0 10px;
+}
+
+.header p{
+    font-size:18px;
+    margin:0;
+}
+
 .container{
-    max-width:1200px;
+    max-width:1100px;
     margin:auto;
     padding:50px 30px;
 }
 
-.cards{
+.grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
     gap:25px;
 }
 
 .card{
     background:white;
-    padding:30px;
     border-radius:18px;
+    padding:28px;
     box-shadow:0 8px 25px rgba(0,0,0,0.08);
 }
 
-.card h3{
+.card h2{
     color:#0D3B66;
+    margin-top:0;
+}
+
+.tag{
+    display:inline-block;
+    background:#D9EAF7;
+    color:#0D3B66;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:12px;
 }
 
 .botao{
@@ -46,51 +69,55 @@ body{
     margin-top:15px;
     background:#0D3B66;
     color:white;
-    padding:12px 20px;
+    padding:12px 18px;
     border-radius:10px;
     text-decoration:none;
+    font-weight:bold;
 }
 
 .voltar{
     text-align:center;
-    margin-top:50px;
+    margin-top:45px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="topo">
+<div class="header">
     <h1>Artigos e Publicações</h1>
-    <p>Produção científica, artigos, capítulos de livros e trabalhos acadêmicos.</p>
+    <p>Produção científica, capítulos de livros, eventos e materiais acadêmicos.</p>
 </div>
 
 <div class="container">
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>Impactos dos Pronunciamentos CPC</h3>
-<p>Resumo do artigo ou publicação.</p>
-<a href="#" class="botao">Ler artigo</a>
+    <span class="tag">Artigo científico</span>
+    <h2>Impactos dos Pronunciamentos CPC</h2>
+    <p>Espaço para resumo do artigo, periódico, ano de publicação e principais contribuições.</p>
+    <a href="#" class="botao">Ler artigo</a>
 </div>
 
 <div class="card">
-<h3>IFRS e Governança Corporativa</h3>
-<p>Resumo do artigo ou publicação.</p>
-<a href="#" class="botao">Ler artigo</a>
+    <span class="tag">Governança</span>
+    <h2>IFRS e Transparência Corporativa</h2>
+    <p>Espaço para inserir publicações sobre normas internacionais, relatórios corporativos e governança.</p>
+    <a href="#" class="botao">Ler artigo</a>
 </div>
 
 <div class="card">
-<h3>Perícia Contábil e Transparência</h3>
-<p>Resumo do artigo ou publicação.</p>
-<a href="#" class="botao">Ler artigo</a>
+    <span class="tag">Perícia contábil</span>
+    <h2>Perícia Contábil e Evidenciação</h2>
+    <p>Espaço para materiais, estudos, pareceres técnicos e conteúdos de apoio profissional.</p>
+    <a href="#" class="botao">Ler artigo</a>
 </div>
 
 </div>
 
 <div class="voltar">
-<a href="index.html" class="botao">Voltar ao Portal</a>
+    <a href="index.html" class="botao">← Voltar ao Portal</a>
 </div>
 
 </div>
