@@ -2,9 +2,12 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Artigos e Publicações - Portal Tarciana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Produção Científica | Portal Tarciana</title>
 
 <style>
+
 body{
     margin:0;
     font-family:Arial, sans-serif;
@@ -15,78 +18,103 @@ body{
 .header{
     background:#0D3B66;
     color:white;
-    padding:50px 30px;
     text-align:center;
+    padding:70px 20px;
 }
 
 .header h1{
-    font-size:42px;
-    margin:0 0 10px;
+    margin:0;
+    font-size:52px;
 }
 
 .header p{
-    font-size:18px;
-    margin:0;
+    margin-top:15px;
+    font-size:20px;
+    opacity:0.95;
 }
 
 .container{
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
-    padding:50px 30px;
+    padding:60px 25px;
 }
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
 }
 
 .card{
     background:white;
-    border-radius:18px;
-    padding:28px;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
-.card h2{
-    color:#0D3B66;
-    margin-top:0;
+.card:hover{
+    transform:translateY(-5px);
 }
 
 .tag{
     display:inline-block;
     background:#D9EAF7;
     color:#0D3B66;
-    padding:6px 12px;
-    border-radius:20px;
+    padding:8px 14px;
+    border-radius:30px;
     font-size:13px;
     font-weight:bold;
-    margin-bottom:12px;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#0D3B66;
+    margin-top:0;
+    margin-bottom:18px;
+    font-size:36px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.6;
+    color:#555;
 }
 
 .botao{
     display:inline-block;
-    margin-top:15px;
+    margin-top:25px;
     background:#0D3B66;
     color:white;
-    padding:12px 18px;
-    border-radius:10px;
     text-decoration:none;
+    padding:14px 24px;
+    border-radius:10px;
     font-weight:bold;
+}
+
+.botao:hover{
+    opacity:0.9;
 }
 
 .voltar{
     text-align:center;
-    margin-top:45px;
+    margin-top:60px;
 }
+
+.footer{
+    text-align:center;
+    padding:30px;
+    color:#666;
+}
+
 </style>
 </head>
 
 <body>
 
 <div class="header">
-    <h1>Artigos e Publicações</h1>
-    <p>Produção científica, capítulos de livros, eventos e materiais acadêmicos.</p>
+    <h1>Produção Científica</h1>
+    <p>Artigos, notícias, análises técnicas e conteúdos acadêmicos em Ciências Contábeis.</p>
 </div>
 
 <div class="container">
@@ -94,32 +122,70 @@ body{
 <div class="grid">
 
 <div class="card">
-    <span class="tag">Artigo científico</span>
-    <h2>Impactos dos Pronunciamentos CPC</h2>
-    <p>Espaço para resumo do artigo, periódico, ano de publicação e principais contribuições.</p>
-    <a href="#" class="botao">Ler artigo</a>
+
+<span class="tag">PUBLICAÇÕES</span>
+
+<h2>Artigos em Congressos e Periódicos</h2>
+
+<p>
+Publicações científicas, artigos completos, capítulos de livros e trabalhos
+apresentados em congressos nacionais e internacionais.
+</p>
+
+<a href="#" class="botao">
+Ver publicações
+</a>
+
 </div>
 
 <div class="card">
-    <span class="tag">Governança</span>
-    <h2>IFRS e Transparência Corporativa</h2>
-    <p>Espaço para inserir publicações sobre normas internacionais, relatórios corporativos e governança.</p>
-    <a href="#" class="botao">Ler artigo</a>
+
+<span class="tag">ATUALIZAÇÕES</span>
+
+<h2>Notícias Contábeis e CPC</h2>
+
+<p>
+Atualizações sobre Pronunciamentos CPC, IFRS, governança corporativa,
+transparência, mercado contábil e tendências da profissão.
+</p>
+
+<a href="#" class="botao">
+Ler notícias
+</a>
+
 </div>
 
 <div class="card">
-    <span class="tag">Perícia contábil</span>
-    <h2>Perícia Contábil e Evidenciação</h2>
-    <p>Espaço para materiais, estudos, pareceres técnicos e conteúdos de apoio profissional.</p>
-    <a href="#" class="botao">Ler artigo</a>
+
+<span class="tag">PERÍCIA</span>
+
+<h2>Perícia Contábil em Destaque</h2>
+
+<p>
+Análises de casos, laudos periciais, jurisprudência,
+boas práticas profissionais e conteúdos aplicados à perícia contábil.
+</p>
+
+<a href="#" class="botao">
+Explorar conteúdo
+</a>
+
 </div>
 
 </div>
 
 <div class="voltar">
-    <a href="index.html" class="botao">← Voltar ao Portal</a>
+
+<a href="index.html" class="botao">
+← Voltar ao Portal
+</a>
+
 </div>
 
+</div>
+
+<div class="footer">
+© Profª Tarciana Borges Ferreira • Portal Ciências Contábeis
 </div>
 
 </body>
