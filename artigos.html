@@ -3,34 +3,97 @@
 <head>
 <meta charset="UTF-8">
 <title>Artigos - Portal Tarciana</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background:#f5f7fa;
+}
+
+.topo{
+    background:#0D3B66;
+    color:white;
+    padding:40px;
+    text-align:center;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#0D3B66;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:15px;
+    background:#0D3B66;
+    color:white;
+    padding:12px 20px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+.voltar{
+    text-align:center;
+    margin-top:50px;
+}
+</style>
 </head>
 
-<body style="font-family:Arial;max-width:1000px;margin:auto;padding:40px;">
+<body>
 
-<h1 style="color:#0D3B66;">Artigos e Publicações</h1>
+<div class="topo">
+    <h1>Artigos e Publicações</h1>
+    <p>Produção científica, artigos, capítulos de livros e trabalhos acadêmicos.</p>
+</div>
 
-<p>
-Espaço destinado à divulgação de artigos científicos, capítulos de livros,
-trabalhos apresentados em congressos e demais publicações acadêmicas.
-</p>
+<div class="container">
 
-<hr>
+<div class="cards">
 
-<h2>Artigo 1</h2>
-<p>Título do artigo.</p>
-<a href="#">Ler artigo</a>
+<div class="card">
+<h3>Impactos dos Pronunciamentos CPC</h3>
+<p>Resumo do artigo ou publicação.</p>
+<a href="#" class="botao">Ler artigo</a>
+</div>
 
-<hr>
+<div class="card">
+<h3>IFRS e Governança Corporativa</h3>
+<p>Resumo do artigo ou publicação.</p>
+<a href="#" class="botao">Ler artigo</a>
+</div>
 
-<h2>Artigo 2</h2>
-<p>Título do artigo.</p>
-<a href="#">Ler artigo</a>
+<div class="card">
+<h3>Perícia Contábil e Transparência</h3>
+<p>Resumo do artigo ou publicação.</p>
+<a href="#" class="botao">Ler artigo</a>
+</div>
 
-<hr>
+</div>
 
-<p>
-<a href="index.html">← Voltar ao Portal</a>
-</p>
+<div class="voltar">
+<a href="index.html" class="botao">Voltar ao Portal</a>
+</div>
+
+</div>
 
 </body>
 </html>
